@@ -1,0 +1,19 @@
+name: Build
+
+on: push
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+    # Checkout this repository
+    - name: Checkout this repository
+      uses: actions/checkout@v2
+    
+    # DocFx metadata
+    - uses: nikeee/docfx-action@master
+      name: DocFx metadata
+      with:
+        args: metadata
