@@ -32,6 +32,20 @@ jobs:
       with:
         args: metadata
 
+    # Install node
+    - name: Install node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    # Install js-yaml
+    - name: Install js-yaml
+      run: npm install js-yaml
+
+    # Run toc.js
+    - name: Run toc.js
+      run: node toc.js
+
     # DocFx build
     - uses: nikeee/docfx-action@master
       name: DocFx build
