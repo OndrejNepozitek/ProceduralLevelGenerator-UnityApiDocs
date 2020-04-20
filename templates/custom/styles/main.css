@@ -1,0 +1,122 @@
+/* COLOR VARIABLES*/
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #db4d3f;
+  --ifm-color-primary-dark: #d63828;
+  --ifm-color-primary-darker: #ca3526;
+  --ifm-color-primary-darkest: #a62b1f;
+  --ifm-color-primary-light: #df6357;
+  --ifm-color-primary-lighter: #e26e63;
+  --ifm-color-primary-lightest: #e88f86;
+  --ifm-code-font-size: 95%;
+  --ifm-navbar-background-color: #db4d3f;
+  --ifm-navbar-link-color: white;
+  --ifm-navbar-link-hover-color: white;
+  --ifm-menu-link-padding-horizontal: 0px;
+  --ifm-menu-link-padding-vertical: 2px;
+  --ifm-menu-color-background-active: none;
+  --ifm-menu-color-background-hover: none;
+  --ifm-menu-color-active: #db4d3f;
+  --sidebar-width: 300px;
+  --ifm-font-base-color: #1c1e21;
+}
+
+body {
+  font-family: system-ui;
+  color: var(--ifm-font-base-color);
+}
+
+.body-content {
+  padding: 0px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav>li>a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  } 
+}
+.navbar-nav>li>a { 
+  font-weight: 600;
+  background-color: transparent !important;
+  color: white !important;
+  font-size: 15px;
+}
+
+.navbar-inverse {
+  background-color: var(--ifm-navbar-background-color);
+  border-color: var(--ifm-navbar-background-color);
+}
+
+.navbar-brand {
+  display: none !important;
+}
+
+.sidefilter, .sidetoc {
+  width: var(--sidebar-width);
+  border-right: 1px solid #dadde1;
+}
+
+.sidetoc {
+  background-color: transparent;
+}
+
+.sidefilter {
+  background-color: transparent;
+}
+
+.toc {
+  background-color: transparent !important;
+}
+
+.article.grid-right {
+  margin-left: calc(var(--sidebar-width) + 30px);
+}
+
+.toc .level1 > li > a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.toc .level1 > li > .expand-stub {
+  top: -1px !important;
+}
+
+.toc .nav > li.active > a {
+  color: var(--ifm-menu-color-active) !important;
+}
+
+.toc .nav > li > a:hover, .toc .nav > li > a:focus {
+  color: var(--ifm-menu-color-active) !important;
+}
+
+.toc .nav > li > a {
+  color: var(--ifm-font-base-color);
+  padding: 2px 0px;
+}
+
+/*.expand-stub {
+  top: -3px !important;
+}*/
+
+.toc ul {
+  font-size: 13px;
+}
+
+.toc .level2 {
+  font-size: 15px;
+}
+
+button:hover, button:focus, a:hover, a:focus {
+  text-decoration: underline;
+  color: var(--ifm-color-primary);
+}
+
+button, a {
+  color: var(--ifm-color-primary);
+}
+
+#navbar {
+  margin-left: -30px;
+}

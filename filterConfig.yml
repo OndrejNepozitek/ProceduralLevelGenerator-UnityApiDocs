@@ -1,0 +1,10 @@
+apiRules:
+- exclude:
+      uidRegex: ^System\.Object
+      type: Type
+- exclude:
+      uidRegex: ^UnityEngine\.Object
+      type: Type
+- exclude:
+      uidRegex: ^UnityEngine
+      type: Type
