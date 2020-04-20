@@ -46,7 +46,7 @@ jobs:
 
     # Run toc.js
     - name: Run toc.js
-      run: node toc.js
+      run: sudo chown -R $(whoami) ./versions/dev/api/toc.yml & node toc.js
 
     # DocFx build
     - uses: nikeee/docfx-action@master
