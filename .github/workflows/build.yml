@@ -14,6 +14,7 @@ jobs:
 
     # Checkout Unity plugin master branch
     - uses: actions/checkout@v2
+      name: Checkout Unity plugin master branch
       with:
         repository: OndrejNepozitek/ProceduralLevelGenerator-Unity
         ref: master
@@ -21,6 +22,7 @@ jobs:
 
     # Checkout Unity plugin dev branch
     - uses: actions/checkout@v2
+      name: Checkout Unity plugin dev branch
       with:
         repository: OndrejNepozitek/ProceduralLevelGenerator-Unity
         ref: dev
