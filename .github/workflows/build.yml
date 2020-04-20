@@ -11,6 +11,20 @@ jobs:
     # Checkout this repository
     - name: Checkout this repository
       uses: actions/checkout@v2
+
+    # Checkout Unity plugin master branch
+    - uses: actions/checkout@v2
+      with:
+        repository: OndrejNepozitek/ProceduralLevelGenerator-Unity
+        ref: master
+        path: src/master
+
+    # Checkout Unity plugin dev branch
+    - uses: actions/checkout@v2
+      with:
+        repository: OndrejNepozitek/ProceduralLevelGenerator-Unity
+        ref: dev
+        path: src/dev
     
     # DocFx metadata
     - uses: nikeee/docfx-action@master
