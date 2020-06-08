@@ -120,3 +120,52 @@ button, a {
 #navbar {
   margin-left: -30px;
 }
+
+h5.propertyValue, h5.propertyValue + .table-responsive, h5.fieldValue, h5.fieldValue + .table-responsive {
+  display: none;
+}
+
+.codewrapper > pre {
+  padding: 20px;
+  margin: 0 0 30px 0;
+  border: #ddd 1px solid;
+  background: #fff;
+  font-size: 1em;
+  color: #455463;
+  overflow: auto;
+  border-radius: 0px;
+}
+
+.decalaration {
+  margin-bottom: 15px;
+  color: black;
+}
+
+article h4 {
+  padding-bottom: 8px;
+  border-bottom: 2px solid #ddd;
+  font-weight: 500;
+}
+
+.level1.summary {
+  font-size: 16px;
+}
+
+.tableSummarySection {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.tableSummarySection td {
+  height: 30px;
+  padding: 0px 10px;
+  border: #e6e6e6 1px solid;
+}
+
+.tableSummarySection tr:nth-child(odd) {
+  background: #f8f8f8;
+}
+
+.tableSummarySection tr td:first-child {
+  width: 20%;
+}

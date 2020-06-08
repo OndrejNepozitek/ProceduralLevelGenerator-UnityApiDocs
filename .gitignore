@@ -7,3 +7,7 @@
 /**/bin/
 /**/obj/
 _site
+
+versions/dev/api/*.yml
+versions/master/api/*.yml
+src/
