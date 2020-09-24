@@ -9,7 +9,7 @@ function transformToc(path) {
 
     for(var i=0; i<toc.length; i++) {
         var currentToc = toc[i];
-        toc[i].name = toc[i].name.replace("Edgar.Unity.", "");
+        toc[i].name = toc[i].name.replace("ProceduralLevelGenerator.Unity.", "");
         console.log(toc[i].name)
     }
 
@@ -17,25 +17,25 @@ function transformToc(path) {
 
     for(var i=0; i<toc.length; i++) {
         var fullNamespace = toc[i].uid;
-        var package = "Edgar.Unity";
+        var package = "ProceduralLevelGenerator.Unity";
         var packageName = "Core";
 
-        if (fullNamespace.startsWith("Edgar.Unity.Examples")) {
-            package = "Edgar.Unity.Examples"; 
+        if (fullNamespace.startsWith("ProceduralLevelGenerator.Unity.Examples")) {
+            package = "ProceduralLevelGenerator.Unity.Examples"; 
             packageName = "Examples";
         }
 
-        if (fullNamespace.startsWith("Edgar.Unity.Editor")) {
-            package = "Edgar.Unity.Editor"; 
+        if (fullNamespace.startsWith("ProceduralLevelGenerator.Unity.Editor")) {
+            package = "ProceduralLevelGenerator.Unity.Editor"; 
             packageName = "Editor";
         }
 
-        if (fullNamespace.startsWith("Edgar.Unity.Tests")) {
-            package = "Edgar.Unity.Tests"; 
+        if (fullNamespace.startsWith("ProceduralLevelGenerator.Unity.Tests")) {
+            package = "ProceduralLevelGenerator.Unity.Tests"; 
             packageName = "Tests";
         }
 
-        var fullnamespace = toc[i].uid.replace("Edgar.Unity.", "");
+        var fullnamespace = toc[i].uid.replace("ProceduralLevelGenerator.Unity.", "");
 
         var namespaceWithoutPackage = fullNamespace.replace(package + ".", "");
         var splitnamespace = namespaceWithoutPackage.split('.');
@@ -90,8 +90,8 @@ function transformToc(path) {
                     newPath = path + '.' + e;
                 }
 
-                // name = newPath.replace("Edgar.Unity.", "");
-                // newpath = "Edgar.Unity." + newPath;
+                // name = newPath.replace("ProceduralLevelGenerator.Unity.", "");
+                // newpath = "ProceduralLevelGenerator.Unity." + newPath;
                 name = undefined
 
                 var newObj = {uid: newPath, name: name || newPath, items: obj[e].items || []}
@@ -121,10 +121,10 @@ function transformToc(path) {
     var items = recurse(namespaces);
 
     var items = []
-    items.push(recurse(namespaces["Edgar.Unity"], "Edgar.Unity"))
-    items.push(recurse(namespaces["Edgar.Unity.Editor"], "Edgar.Unity"))
-    items.push(recurse(namespaces["Edgar.Unity.Examples"], "Edgar.Unity"))
-    items.push(recurse(namespaces["Edgar.Unity.Tests"], "Edgar.Unity"))
+    items.push(recurse(namespaces["ProceduralLevelGenerator.Unity"], "ProceduralLevelGenerator.Unity"))
+    items.push(recurse(namespaces["ProceduralLevelGenerator.Unity.Editor"], "ProceduralLevelGenerator.Unity"))
+    items.push(recurse(namespaces["ProceduralLevelGenerator.Unity.Examples"], "ProceduralLevelGenerator.Unity"))
+    items.push(recurse(namespaces["ProceduralLevelGenerator.Unity.Tests"], "ProceduralLevelGenerator.Unity"))
 
     // console.log(util.inspect(items, false, null, true /* enable colors */))
 
@@ -132,5 +132,5 @@ function transformToc(path) {
     // fs.writeFileSync('./toc_new.yml', yaml.safeDump(items));
 }
 
-// transformToc('./versions/master/api/toc.yml');
-transformToc('./versions/dev/api/toc.yml');
+transformToc('./versions/master/api/toc.yml');
+// transformToc('./versions/dev/api/toc.yml');

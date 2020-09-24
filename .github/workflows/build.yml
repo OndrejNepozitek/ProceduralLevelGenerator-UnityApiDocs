@@ -48,6 +48,10 @@ jobs:
     - name: Run toc.js
       run: sudo node toc.js
 
+    # Run toc.js old
+    - name: Run toc.js old
+      run: sudo node toc_old.js
+
     # DocFx build
     - uses: nikeee/docfx-action@master
       name: DocFx build
