@@ -35,10 +35,13 @@ function transformToc(path) {
             packageName = "Tests";
         }
 
-        var fullnamespace = toc[i].uid.replace("Edgar.Unity.", "");
+        if (fullNamespace == package) {
+            var namespaceWithoutPackage = "";
+        } else {
+            var namespaceWithoutPackage = fullNamespace.replace(package + ".", "");
+        }
 
-        var namespaceWithoutPackage = fullNamespace.replace(package + ".", "");
-        var splitnamespace = namespaceWithoutPackage.split('.');
+        
 
         if (namespaces[package] == undefined) {
             namespaces[package] = {
@@ -50,18 +53,23 @@ function transformToc(path) {
 
         var parent = namespaces[package];
 
-        for(var j = 0; j < splitnamespace.length; j++) {
-            var partialnamespace = splitnamespace[j];
+        if (namespaceWithoutPackage !== "") {
+            var splitnamespace = namespaceWithoutPackage.split('.');
 
-            if(parent.nested[partialnamespace] == undefined) {
-                parent.nested[partialnamespace] = {
-                    name: partialnamespace,
-                    uid: parent.uid + "." + partialnamespace,
-                    nested: {},
-                };
+            for(var j = 0; j < splitnamespace.length; j++) {
+                var partialnamespace = splitnamespace[j];
+    
+                if(parent.nested[partialnamespace] == undefined) {
+                    parent.nested[partialnamespace] = {
+                        name: partialnamespace,
+                        uid: parent.uid + "." + partialnamespace,
+                        nested: {},
+                    };
+                }
+                parent = parent.nested[partialnamespace];
             }
-            parent = parent.nested[partialnamespace];
         }
+
 
         if(parent.items == undefined) {
             parent.items = toc[i].items;
@@ -75,32 +83,6 @@ function transformToc(path) {
     console.log(util.inspect(namespaces, {showHidden: false, depth: null}))*/
 
     console.log(util.inspect(namespaces, false, null, true /* enable colors */))
-
-    var newToc = [];
-
-    /*function recurse(obj, path="") {
-        var items = [];
-        Object.keys(obj).forEach((e, i)=>{
-            if(e!="items") {
-                var newPath;
-                if(path=="") {
-                    newPath = e;
-                }
-                else {
-                    newPath = path + '.' + e;
-                }
-
-                // name = newPath.replace("Edgar.Unity.", "");
-                // newpath = "Edgar.Unity." + newPath;
-                name = undefined
-
-                var newObj = {uid: newPath, name: name || newPath, items: obj[e].items || []}
-                newObj.items.push(...recurse(obj[e], newPath));
-                items.push(newObj);
-            }
-        });
-        return items;
-    }*/
 
     function recurse(namespace) {
         var items = namespace.items || [];
@@ -118,13 +100,12 @@ function transformToc(path) {
         };
     }
 
-    var items = recurse(namespaces);
-
     var items = []
-    items.push(recurse(namespaces["Edgar.Unity"], "Edgar.Unity"))
-    items.push(recurse(namespaces["Edgar.Unity.Editor"], "Edgar.Unity"))
-    items.push(recurse(namespaces["Edgar.Unity.Examples"], "Edgar.Unity"))
-    items.push(recurse(namespaces["Edgar.Unity.Tests"], "Edgar.Unity"))
+    
+    items.push(recurse(namespaces["Edgar.Unity"]))
+    items.push(recurse(namespaces["Edgar.Unity.Editor"]))
+    items.push(recurse(namespaces["Edgar.Unity.Examples"]))
+    items.push(recurse(namespaces["Edgar.Unity.Tests"]))
 
     // console.log(util.inspect(items, false, null, true /* enable colors */))
 
