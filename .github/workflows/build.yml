@@ -16,17 +16,19 @@ jobs:
     - uses: actions/checkout@v2
       name: Checkout Unity plugin master branch
       with:
-        repository: OndrejNepozitek/ProceduralLevelGenerator-Unity
-        ref: master
+        repository: OndrejNepozitek/Edgar-UnityPRO
+        ref: pro-master
         path: src/master
-
+        token: ${{ secrets.PRO_GH_PAT }}
+      
     # Checkout Unity plugin dev branch
     - uses: actions/checkout@v2
       name: Checkout Unity plugin dev branch
       with:
-        repository: OndrejNepozitek/ProceduralLevelGenerator-Unity
-        ref: dev
+        repository: OndrejNepozitek/Edgar-UnityPRO
+        ref: pro-dev
         path: src/dev
+        token: ${{ secrets.PRO_GH_PAT }}
     
     # DocFx metadata
     - uses: nikeee/docfx-action@master
