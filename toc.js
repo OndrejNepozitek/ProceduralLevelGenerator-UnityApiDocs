@@ -2,7 +2,7 @@ var fs = require('fs');
 var yaml = require('js-yaml');
 
 function transformToc(path) {
-    var toc = yaml.safeLoad(fs.readFileSync(path));
+    var toc = yaml.load(fs.readFileSync(path));
     const util = require('util')
 
     var namespaces = {};
@@ -109,7 +109,7 @@ function transformToc(path) {
 
     // console.log(util.inspect(items, false, null, true /* enable colors */))
 
-    fs.writeFileSync(path, yaml.safeDump(items));
+    fs.writeFileSync(path, yaml.dump(items));
     // fs.writeFileSync('./toc_new.yml', yaml.safeDump(items));
 }
 
