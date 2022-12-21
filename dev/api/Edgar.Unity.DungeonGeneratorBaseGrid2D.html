@@ -1,0 +1,734 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DungeonGeneratorBaseGrid2D
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DungeonGeneratorBaseGrid2D
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D">
+  
+  
+  <h1 id="Edgar_Unity_DungeonGeneratorBaseGrid2D" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D" class="text-break">Class DungeonGeneratorBaseGrid2D
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for various dungeon generators.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Edgar.Unity.VersionedMonoBehaviour.html">VersionedMonoBehaviour</a></div>
+    <div class="level2"><a class="xref" href="Edgar.Unity.LevelGeneratorBase-1.html">LevelGeneratorBase</a>&lt;<a class="xref" href="Edgar.Unity.DungeonGeneratorPayloadGrid2D.html">DungeonGeneratorPayloadGrid2D</a>&gt;</div>
+    <div class="level3"><span class="xref">DungeonGeneratorBaseGrid2D</span></div>
+      <div class="level4"><a class="xref" href="Edgar.Unity.DungeonGeneratorGrid2D.html">DungeonGeneratorGrid2D</a></div>
+      <div class="level4"><a class="xref" href="Edgar.Unity.DungeonGeneratorGrid2D.html">DungeonGeneratorGrid2D</a></div>
+      <div class="level4"><a class="xref" href="Edgar.Unity.PlatformerGeneratorGrid2D.html">PlatformerGeneratorGrid2D</a></div>
+      <div class="level4"><a class="xref" href="Edgar.Unity.PlatformerGeneratorGrid2D.html">PlatformerGeneratorGrid2D</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">ISerializationCallbackReceiver</span></div>
+    <div><a class="xref" href="Edgar.Unity.ILevelGenerator.html">ILevelGenerator</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Edgar.Unity.LevelGeneratorBase-1.html#Edgar_Unity_LevelGeneratorBase_1_PipelineRunner">LevelGeneratorBase&lt;DungeonGeneratorPayloadGrid2D&gt;.PipelineRunner</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Unity.LevelGeneratorBase-1.html#Edgar_Unity_LevelGeneratorBase_1_EnableDiagnostics">LevelGeneratorBase&lt;DungeonGeneratorPayloadGrid2D&gt;.EnableDiagnostics</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Unity.LevelGeneratorBase-1.html#Edgar_Unity_LevelGeneratorBase_1_GetRandomNumbersGenerator_System_Boolean_System_Int32_">LevelGeneratorBase&lt;DungeonGeneratorPayloadGrid2D&gt;.GetRandomNumbersGenerator(Boolean, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Unity.LevelGeneratorBase-1.html#Edgar_Unity_LevelGeneratorBase_1_Generate">LevelGeneratorBase&lt;DungeonGeneratorPayloadGrid2D&gt;.Generate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Unity.LevelGeneratorBase-1.html#Edgar_Unity_LevelGeneratorBase_1_GenerateCoroutine">LevelGeneratorBase&lt;DungeonGeneratorPayloadGrid2D&gt;.GenerateCoroutine()</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Unity.VersionedMonoBehaviour.html#Edgar_Unity_VersionedMonoBehaviour_OnBeforeSerialize">VersionedMonoBehaviour.OnBeforeSerialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Unity.VersionedMonoBehaviour.html#Edgar_Unity_VersionedMonoBehaviour_OnAfterDeserialize">VersionedMonoBehaviour.OnAfterDeserialize()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.Unity.html">Edgar.Unity</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class DungeonGeneratorBaseGrid2D : LevelGeneratorBase&lt;DungeonGeneratorPayloadGrid2D&gt;, ISerializationCallbackReceiver, ILevelGenerator</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_AdvancedConfig" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.AdvancedConfig">AdvancedConfig</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AdvancedConfigGrid2D AdvancedConfig</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.AdvancedConfigGrid2D.html">AdvancedConfigGrid2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_CustomInputTask" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.CustomInputTask">CustomInputTask</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DungeonGeneratorInputBaseGrid2D CustomInputTask</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DungeonGeneratorInputBaseGrid2D.html">DungeonGeneratorInputBaseGrid2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_CustomPostProcessTasks" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.CustomPostProcessTasks">CustomPostProcessTasks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;DungeonGeneratorPostProcessingGrid2D&gt; CustomPostProcessTasks</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Edgar.Unity.DungeonGeneratorPostProcessingGrid2D.html">DungeonGeneratorPostProcessingGrid2D</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_DisableCustomPostProcessing" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.DisableCustomPostProcessing">DisableCustomPostProcessing</h4>
+  <div class="markdown level1 summary"><p>Disable all custom post-processing tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool DisableCustomPostProcessing</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_FixedLevelGraphConfig" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.FixedLevelGraphConfig">FixedLevelGraphConfig</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedLevelGraphConfigGrid2D FixedLevelGraphConfig</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.FixedLevelGraphConfigGrid2D.html">FixedLevelGraphConfigGrid2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_GenerateOnStart" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.GenerateOnStart">GenerateOnStart</h4>
+  <div class="markdown level1 summary"><p>Whether to generate a level on enter play mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GenerateOnStart</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_GeneratorConfig" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.GeneratorConfig">GeneratorConfig</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DungeonGeneratorConfigGrid2D GeneratorConfig</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DungeonGeneratorConfigGrid2D.html">DungeonGeneratorConfigGrid2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_InputType" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.InputType">InputType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DungeonGeneratorInputTypeGrid2D InputType</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DungeonGeneratorInputTypeGrid2D.html">DungeonGeneratorInputTypeGrid2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_OtherConfig" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.OtherConfig">OtherConfig</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OtherConfigGrid2D OtherConfig</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.OtherConfigGrid2D.html">OtherConfigGrid2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_PostProcessConfig" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.PostProcessConfig">PostProcessConfig</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PostProcessingConfigGrid2D PostProcessConfig</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.PostProcessingConfigGrid2D.html">PostProcessingConfigGrid2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_RandomGeneratorSeed" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.RandomGeneratorSeed">RandomGeneratorSeed</h4>
+  <div class="markdown level1 summary"><p>Which seed should be used for the random numbers generator.
+Is used only when UseRandomSeed is false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RandomGeneratorSeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_ThrowExceptionsImmediately" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.ThrowExceptionsImmediately">ThrowExceptionsImmediately</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ThrowExceptionsImmediately</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_UseRandomSeed" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.UseRandomSeed">UseRandomSeed</h4>
+  <div class="markdown level1 summary"><p>Whether to use a random seed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UseRandomSeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Edgar_Unity_DungeonGeneratorBaseGrid2D_ThrowExceptionImmediately_" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.ThrowExceptionImmediately*"></a>
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_ThrowExceptionImmediately" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.ThrowExceptionImmediately">ThrowExceptionImmediately</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool ThrowExceptionImmediately { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Edgar.Unity.LevelGeneratorBase&lt;Edgar.Unity.DungeonGeneratorPayloadGrid2D&gt;.ThrowExceptionImmediately</span></div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_Unity_DungeonGeneratorBaseGrid2D_ExportMapDescription_" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.ExportMapDescription*"></a>
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_ExportMapDescription" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.ExportMapDescription">ExportMapDescription()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExportMapDescription()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_DungeonGeneratorBaseGrid2D_GetGeneratorTask_" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.GetGeneratorTask*"></a>
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_GetGeneratorTask" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.GetGeneratorTask">GetGeneratorTask()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IPipelineTask&lt;DungeonGeneratorPayloadGrid2D&gt; GetGeneratorTask()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.IPipelineTask-1.html">IPipelineTask</a>&lt;<a class="xref" href="Edgar.Unity.DungeonGeneratorPayloadGrid2D.html">DungeonGeneratorPayloadGrid2D</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_DungeonGeneratorBaseGrid2D_GetInputTask_" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.GetInputTask*"></a>
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_GetInputTask" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.GetInputTask">GetInputTask()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IPipelineTask&lt;DungeonGeneratorPayloadGrid2D&gt; GetInputTask()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.IPipelineTask-1.html">IPipelineTask</a>&lt;<a class="xref" href="Edgar.Unity.DungeonGeneratorPayloadGrid2D.html">DungeonGeneratorPayloadGrid2D</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_DungeonGeneratorBaseGrid2D_GetPipelineItemsAndPayload_" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.GetPipelineItemsAndPayload*"></a>
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_GetPipelineItemsAndPayload" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.GetPipelineItemsAndPayload">GetPipelineItemsAndPayload()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override (List&lt;IPipelineTask&lt;DungeonGeneratorPayloadGrid2D&gt;&gt; pipelineItems, DungeonGeneratorPayloadGrid2D payload) GetPipelineItemsAndPayload()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Edgar.Unity.IPipelineTask-1.html">IPipelineTask</a>&lt;<a class="xref" href="Edgar.Unity.DungeonGeneratorPayloadGrid2D.html">DungeonGeneratorPayloadGrid2D</a>&gt;&gt;, <a class="xref" href="Edgar.Unity.DungeonGeneratorPayloadGrid2D.html">DungeonGeneratorPayloadGrid2D</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Edgar.Unity.LevelGeneratorBase&lt;Edgar.Unity.DungeonGeneratorPayloadGrid2D&gt;.GetPipelineItemsAndPayload()</span></div>
+  
+  
+  <a id="Edgar_Unity_DungeonGeneratorBaseGrid2D_GetPostProcessingTask_" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.GetPostProcessingTask*"></a>
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_GetPostProcessingTask" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.GetPostProcessingTask">GetPostProcessingTask()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IPipelineTask&lt;DungeonGeneratorPayloadGrid2D&gt; GetPostProcessingTask()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.IPipelineTask-1.html">IPipelineTask</a>&lt;<a class="xref" href="Edgar.Unity.DungeonGeneratorPayloadGrid2D.html">DungeonGeneratorPayloadGrid2D</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_DungeonGeneratorBaseGrid2D_GetTilemapLayersHandler_" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.GetTilemapLayersHandler*"></a>
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_GetTilemapLayersHandler" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.GetTilemapLayersHandler">GetTilemapLayersHandler()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Func&lt;ITilemapLayersHandlerGrid2D&gt; GetTilemapLayersHandler()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;<a class="xref" href="Edgar.Unity.ITilemapLayersHandlerGrid2D.html">ITilemapLayersHandlerGrid2D</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_DungeonGeneratorBaseGrid2D_InitializePayload_" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.InitializePayload*"></a>
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_InitializePayload" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.InitializePayload">InitializePayload()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual DungeonGeneratorPayloadGrid2D InitializePayload()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DungeonGeneratorPayloadGrid2D.html">DungeonGeneratorPayloadGrid2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_DungeonGeneratorBaseGrid2D_OnUpgradeSerializedData_" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.OnUpgradeSerializedData*"></a>
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_OnUpgradeSerializedData_System_Int32_" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.OnUpgradeSerializedData(System.Int32)">OnUpgradeSerializedData(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override int OnUpgradeSerializedData(int version)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">version</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Edgar.Unity.VersionedMonoBehaviour.html#Edgar_Unity_VersionedMonoBehaviour_OnUpgradeSerializedData_System_Int32_">VersionedMonoBehaviour.OnUpgradeSerializedData(Int32)</a></div>
+  
+  
+  <a id="Edgar_Unity_DungeonGeneratorBaseGrid2D_Start_" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.Start*"></a>
+  <h4 id="Edgar_Unity_DungeonGeneratorBaseGrid2D_Start" data-uid="Edgar.Unity.DungeonGeneratorBaseGrid2D.Start">Start()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Start()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">ISerializationCallbackReceiver</span>
+  </div>
+  <div>
+      <a class="xref" href="Edgar.Unity.ILevelGenerator.html">ILevelGenerator</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

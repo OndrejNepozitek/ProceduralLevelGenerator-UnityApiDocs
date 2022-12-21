@@ -1,0 +1,3304 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PlatformerMotor2D
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PlatformerMotor2D
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D">
+  
+  
+  <h1 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D" class="text-break">Class PlatformerMotor2D
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PlatformerMotor2D</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.Unity.Examples.PC2D.html">Edgar.Unity.Examples.PC2D</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PlatformerMotor2D : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_additionalRaycastsPerSide" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.additionalRaycastsPerSide">additionalRaycastsPerSide</h4>
+  <div class="markdown level1 summary"><p>When checking for moving platforms that may have moved into the motor the corners are automatically casted on. This
+variable impacts how many more casts are made to each side. If the smallest size environment is the same size or bigger
+than the motor (width and height) then this can be 0. If it's at least half size then this can be 1. Increasing this
+number allows separation from smaller platform pieces but at a performance cost.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int additionalRaycastsPerSide</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_airSpeed" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.airSpeed">airSpeed</h4>
+  <div class="markdown level1 summary"><p>The maximum horizontal speed of the motor in the air.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float airSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_airStopDistance" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.airStopDistance">airStopDistance</h4>
+  <div class="markdown level1 summary"><p>The distance the motor will 'slide' to a stop while in the air. Only effects horizontal
+movement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float airStopDistance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_angleAllowedForMoving" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.angleAllowedForMoving">angleAllowedForMoving</h4>
+  <div class="markdown level1 summary"><p>The angle of slope the motor is allowed to walk on. It could be a good idea to keep this slightly above the minimum.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float angleAllowedForMoving</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_changeDirectionInAir" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.changeDirectionInAir">changeDirectionInAir</h4>
+  <div class="markdown level1 summary"><p>If true, then the player can change x direction while jumping. If false, then
+the x velocity when leaving the ground will be held while in the air</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool changeDirectionInAir</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_changeSpeedOnSlopes" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.changeSpeedOnSlopes">changeSpeedOnSlopes</h4>
+  <div class="markdown level1 summary"><p>Should the speed of the motor change depending of the angle of the slope. This only impacts walking on slopes, not
+while sliding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool changeSpeedOnSlopes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_cornerDistanceCheck" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.cornerDistanceCheck">cornerDistanceCheck</h4>
+  <div class="markdown level1 summary"><p>This is the size of the corner check. This can be tweaked with if corner grabs are not working correctly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float cornerDistanceCheck</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_cornerGrabDuration" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.cornerGrabDuration">cornerGrabDuration</h4>
+  <div class="markdown level1 summary"><p>The duration, in seconds, that the motor will stick to a corner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float cornerGrabDuration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_cornerJumpMultiplier" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.cornerJumpMultiplier">cornerJumpMultiplier</h4>
+  <div class="markdown level1 summary"><p>The jump speed multiplier when jumping from a corner grab. Useful to forcing bigger jumps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float cornerJumpMultiplier</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_dashCooldown" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.dashCooldown">dashCooldown</h4>
+  <div class="markdown level1 summary"><p>When the motor will be allowed to dash again after dashing. The cooldown begins at the end of a dash.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float dashCooldown</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_dashDistance" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.dashDistance">dashDistance</h4>
+  <div class="markdown level1 summary"><p>How far the motor will dash.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float dashDistance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_dashDuration" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.dashDuration">dashDuration</h4>
+  <div class="markdown level1 summary"><p>How long the dash lasts in seconds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float dashDuration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_dashEasingFunction" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.dashEasingFunction">dashEasingFunction</h4>
+  <div class="markdown level1 summary"><p>The easing function used during the dash. Pick 'Linear' for just a set speed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EasingFunctions.Functions dashEasingFunction</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.Examples.PC2D.EasingFunctions.Functions.html">EasingFunctions.Functions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_distanceToCheckToStick" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.distanceToCheckToStick">distanceToCheckToStick</h4>
+  <div class="markdown level1 summary"><p>If stickOnGround is true then the motor will search down for the ground to place itself on. This is how far it is willing
+to check. This needs to be high enough to account for the distance placed by the motor speed but should be smaller than
+the difference between environment heights. Play around until a nice value is found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float distanceToCheckToStick</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_enableCornerGrabs" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.enableCornerGrabs">enableCornerGrabs</h4>
+  <div class="markdown level1 summary"><p>Are corner grabs allowed? A corner grab is when the motor sticks to a corner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool enableCornerGrabs</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_enableDashes" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.enableDashes">enableDashes</h4>
+  <div class="markdown level1 summary"><p>Is dashing allowed?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool enableDashes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_enableOneWayPlatforms" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.enableOneWayPlatforms">enableOneWayPlatforms</h4>
+  <div class="markdown level1 summary"><p>Should the motor check for one way platforms? Set this to false if there aren't any, the motor will be more efficient.
+This will only have an effect if the motor's collider can't collide with its own layer. If it can then setting this to
+false won't help, one way platforms or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool enableOneWayPlatforms</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_enableSlopes" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.enableSlopes">enableSlopes</h4>
+  <div class="markdown level1 summary"><p>Should the motor check for any slopes? Set this to false if there are no slopes, the motor will be more efficient.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool enableSlopes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_enableWallJumps" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.enableWallJumps">enableWallJumps</h4>
+  <div class="markdown level1 summary"><p>If wall jumps are allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool enableWallJumps</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_enableWallSlides" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.enableWallSlides">enableWallSlides</h4>
+  <div class="markdown level1 summary"><p>If wall slides are allowed. A wall slide is when a motor slides down a wall. This will only take in effect
+once the stick is over.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool enableWallSlides</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_enableWallSticks" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.enableWallSticks">enableWallSticks</h4>
+  <div class="markdown level1 summary"><p>If wall sticking is allowed. A wall sticking is when a motor will 'grab' a wall.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool enableWallSticks</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_endDashNoGravityDuration" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.endDashNoGravityDuration">endDashNoGravityDuration</h4>
+  <div class="markdown level1 summary"><p>Delay (in seconds) before gravity is turned back on after a dash.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float endDashNoGravityDuration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_envCheckDistance" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.envCheckDistance">envCheckDistance</h4>
+  <div class="markdown level1 summary"><p>How far out the motor will check for the environment mask. This value can be tweaked if jump checks are not firing when
+wanted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float envCheckDistance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_extraJumpHeight" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.extraJumpHeight">extraJumpHeight</h4>
+  <div class="markdown level1 summary"><p>The extra height the motor will jump if jump is 'held' down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float extraJumpHeight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_fallSpeed" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.fallSpeed">fallSpeed</h4>
+  <div class="markdown level1 summary"><p>The maximum speed that the motor will fall. Only effects vertical speed when falling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fallSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_fastFallGravityMultiplier" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.fastFallGravityMultiplier">fastFallGravityMultiplier</h4>
+  <div class="markdown level1 summary"><p>If the motor is in 'fast fall' then the gravityMultiplier is multiplied by the value. Higher number means
+faster acceleration while falling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fastFallGravityMultiplier</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_fastFallSpeed" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.fastFallSpeed">fastFallSpeed</h4>
+  <div class="markdown level1 summary"><p>The maximum speed that the motor will fall during 'fast fall'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fastFallSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_gravityMultiplier" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.gravityMultiplier">gravityMultiplier</h4>
+  <div class="markdown level1 summary"><p>Gravity multiplier to the Physics2D.gravity setting. Works like RigidBody2D's gravityMultiplier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float gravityMultiplier</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_groundSpeed" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.groundSpeed">groundSpeed</h4>
+  <div class="markdown level1 summary"><p>The maximum speed the motor will move on the ground, only effects horizontal speed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float groundSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_groundStopDistance" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.groundStopDistance">groundStopDistance</h4>
+  <div class="markdown level1 summary"><p>The distance the motor will slide to a stop from full speed while on the ground.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float groundStopDistance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ignoreMovementAfterJump" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ignoreMovementAfterJump">ignoreMovementAfterJump</h4>
+  <div class="markdown level1 summary"><p>After a corner or wall jump, this is how longer horizontal input is ignored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ignoreMovementAfterJump</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_iterationDebug" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.iterationDebug">iterationDebug</h4>
+  <div class="markdown level1 summary"><p>Internal gizmos for iteration debugging.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool iterationDebug</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_jumpHeight" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.jumpHeight">jumpHeight</h4>
+  <div class="markdown level1 summary"><p>The height the motor will jump when a jump command is issued.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float jumpHeight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_jumpWindowWhenActivated" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.jumpWindowWhenActivated">jumpWindowWhenActivated</h4>
+  <div class="markdown level1 summary"><p>The grace period once the motor is told to jump where it will jump.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float jumpWindowWhenActivated</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_jumpWindowWhenFalling" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.jumpWindowWhenFalling">jumpWindowWhenFalling</h4>
+  <div class="markdown level1 summary"><p>The amount of time once the motor has left an environment that a jump will be allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float jumpWindowWhenFalling</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ladderSpeed" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ladderSpeed">ladderSpeed</h4>
+  <div class="markdown level1 summary"><p>Maximum horizontal/vertical speed of the motor while climb a ladder</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ladderSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_minDistanceFromEnv" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.minDistanceFromEnv">minDistanceFromEnv</h4>
+  <div class="markdown level1 summary"><p>The distance the motor will separate itself from environment. This is useful to prevent the motor from catching on edges.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float minDistanceFromEnv</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_minimumSpeedToMoveUpSlipperySlope" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.minimumSpeedToMoveUpSlipperySlope">minimumSpeedToMoveUpSlipperySlope</h4>
+  <div class="markdown level1 summary"><p>The speed necessary to try running up a slope that's too steep. If speed is less than the minimum then the motor's
+velocity is zeroed out and the motor can't try to run up the slope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float minimumSpeedToMoveUpSlipperySlope</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_movingPlatformDebug" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.movingPlatformDebug">movingPlatformDebug</h4>
+  <div class="markdown level1 summary"><p>Internal gizmos moving platform debug rendering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool movingPlatformDebug</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_movingPlatformLayerMask" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.movingPlatformLayerMask">movingPlatformLayerMask</h4>
+  <div class="markdown level1 summary"><p>The layer that contains moving platforms. If there are no moving platforms then make sure this has no layers (value of 0).
+Optimizations are made in the motor if it isn't expecting any moving platforms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerMask movingPlatformLayerMask</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LayerMask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_normalizedValidWallInteraction" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.normalizedValidWallInteraction">normalizedValidWallInteraction</h4>
+  <div class="markdown level1 summary"><p>This is the size of a valid check (normalized to collider height) that will consider wall interactions valid.
+Starts from the top of the collider and moves down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float normalizedValidWallInteraction</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_numOfAirJumps" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.numOfAirJumps">numOfAirJumps</h4>
+  <div class="markdown level1 summary"><p>Number of air jumps allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int numOfAirJumps</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_numOfIterations" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.numOfIterations">numOfIterations</h4>
+  <div class="markdown level1 summary"><p>The number of iterations the motor is allowed to make during the fixed update. Lower number will be more performant
+at a cost of losing some movement when collisions occur.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int numOfIterations</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_onAirJump" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.onAirJump">onAirJump</h4>
+  <div class="markdown level1 summary"><p>Delegate to attach to when the motor air jumps (called before onJump).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action onAirJump</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_onCornerJump" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.onCornerJump">onCornerJump</h4>
+  <div class="markdown level1 summary"><p>Delegate to attach to when the motor corner jumps (called before onJump).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action onCornerJump</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_onDash" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.onDash">onDash</h4>
+  <div class="markdown level1 summary"><p>Delegate to attach to when the motor dashes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action onDash</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_onDashEnd" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.onDashEnd">onDashEnd</h4>
+  <div class="markdown level1 summary"><p>Delegate to attach to when the motor's dash ends.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action onDashEnd</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_oneWayPlatformsAreWalls" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.oneWayPlatformsAreWalls">oneWayPlatformsAreWalls</h4>
+  <div class="markdown level1 summary"><p>if enableOneWayPlatforms is disabled how the motor should treat OWP?
+when both are disabled, OWP are ignored from collisions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool oneWayPlatformsAreWalls</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_onJump" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.onJump">onJump</h4>
+  <div class="markdown level1 summary"><p>Delegate to attach to when the motor jumps (ALL JUMPS!).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action onJump</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_onJumpEnd" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.onJumpEnd">onJumpEnd</h4>
+  <div class="markdown level1 summary"><p>Delegate that notifies, before change state, last jump has ended, reached the maximum allowed.
+Do not has parity with onJump, this is called when the last Jump ends not when Jump again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action onJumpEnd</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_onLanded" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.onLanded">onLanded</h4>
+  <div class="markdown level1 summary"><p>Delegate that notifies that the motor has landed. amountFallen can be queried for distance fallen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action onLanded</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_onSlipping" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.onSlipping">onSlipping</h4>
+  <div class="markdown level1 summary"><p>Delegate that notifies that the motor start slipping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action onSlipping</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_onSlippingEnd" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.onSlippingEnd">onSlippingEnd</h4>
+  <div class="markdown level1 summary"><p>Delegate that notifies, before change state, that the motor end sliping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action onSlippingEnd</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_onWallJump" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.onWallJump">onWallJump</h4>
+  <div class="markdown level1 summary"><p>Delegate to attach to when the motor walls jumps (called before onJump). The vector passed is the normal of the wall.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;Vector2&gt; onWallJump</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Action</span>&lt;<span class="xref">Vector2</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_slopeNormal" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.slopeNormal">slopeNormal</h4>
+  <div class="markdown level1 summary"><p>The normal of the slope the motor is on. This value doesn't have meaning unless onSlope is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 slopeNormal</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_speedMultiplierOnSlope" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.speedMultiplierOnSlope">speedMultiplierOnSlope</h4>
+  <div class="markdown level1 summary"><p>If the motor changes speed on slopes then this acts as a multiplier. Lower values will mean bigger slow downs. A value
+of 1 means that it's only based off of the angle of the slope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float speedMultiplierOnSlope</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_staticEnvLayerMask" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.staticEnvLayerMask">staticEnvLayerMask</h4>
+  <div class="markdown level1 summary"><p>The static environment check mask. This should only be environment that doesn't move.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayerMask staticEnvLayerMask</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">LayerMask</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_stickOnGround" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.stickOnGround">stickOnGround</h4>
+  <div class="markdown level1 summary"><p>Should the motor stick to the ground when walking down onto a slope or up over a slope? Otherwise the motor may fall onto
+the slope or have a slight hop when moving up over a slope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool stickOnGround</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_timeToAirSpeed" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.timeToAirSpeed">timeToAirSpeed</h4>
+  <div class="markdown level1 summary"><p>The time it takes to move from zero horizontal speed to the maximum speed. This value is
+used to calculate the acceleration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float timeToAirSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_timeToGroundSpeed" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.timeToGroundSpeed">timeToGroundSpeed</h4>
+  <div class="markdown level1 summary"><p>How much time does it take for the motor to get from zero speed to max speed. This value
+is used to calculate the acceleration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float timeToGroundSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_timeToWallSlideSpeed" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.timeToWallSlideSpeed">timeToWallSlideSpeed</h4>
+  <div class="markdown level1 summary"><p>The time, in seconds, to get to wall slide speed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float timeToWallSlideSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_wallInteractionCooldown" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.wallInteractionCooldown">wallInteractionCooldown</h4>
+  <div class="markdown level1 summary"><p>Cooldown for allowing slides, sticks, and corner grabs. This may be necessary if the motor can slide down a vertical
+moving platform. If they don't exist then this can be 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float wallInteractionCooldown</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_wallInteractionThreshold" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.wallInteractionThreshold">wallInteractionThreshold</h4>
+  <div class="markdown level1 summary"><p>The threshold that normalizedXMovement will have to be higher than to consider wall sticks, wall slides, wall jumps,
+and corner grabs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float wallInteractionThreshold</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_wallJumpAngle" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.wallJumpAngle">wallJumpAngle</h4>
+  <div class="markdown level1 summary"><p>The angle (degrees) in which the motor will jump away from the wall. 0 is horizontal and 90 is straight up.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float wallJumpAngle</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_wallJumpMultiplier" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.wallJumpMultiplier">wallJumpMultiplier</h4>
+  <div class="markdown level1 summary"><p>The jump speed multiplier when wall jumping. This is useful to force bigger jumps off of the wall.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float wallJumpMultiplier</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_wallSlideSpeed" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.wallSlideSpeed">wallSlideSpeed</h4>
+  <div class="markdown level1 summary"><p>The speed that the motor will slide down the wall.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float wallSlideSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_wallSticksDuration" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.wallSticksDuration">wallSticksDuration</h4>
+  <div class="markdown level1 summary"><p>The duration of the wall sticks in seconds. Set to a very large number to effectively allow permanent sticks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float wallSticksDuration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_amountFallen_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.amountFallen*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_amountFallen" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.amountFallen">amountFallen</h4>
+  <div class="markdown level1 summary"><p>Returns the amount of distance the motor has fallen. Includes fallen fast distance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float amountFallen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_amountFastFallen_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.amountFastFallen*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_amountFastFallen" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.amountFastFallen">amountFastFallen</h4>
+  <div class="markdown level1 summary"><p>Returns the amount of distance the motor has fallen fast.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float amountFastFallen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_amountJumpedFor_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.amountJumpedFor*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_amountJumpedFor" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.amountJumpedFor">amountJumpedFor</h4>
+  <div class="markdown level1 summary"><p>Returns the amount the motor has jumped. This ceases to keep calculating after the motor starts to come down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float amountJumpedFor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_canDash_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.canDash*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_canDash" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.canDash">canDash</h4>
+  <div class="markdown level1 summary"><p>If the motor is currently able to dash.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool canDash { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_collidingAgainst_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.collidingAgainst*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_collidingAgainst" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.collidingAgainst">collidingAgainst</h4>
+  <div class="markdown level1 summary"><p>The surfaces the motor is currently colliding against.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlatformerMotor2D.CollidedSurface collidingAgainst { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.CollidedSurface.html">PlatformerMotor2D.CollidedSurface</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_connectedPlatform_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.connectedPlatform*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_connectedPlatform" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.connectedPlatform">connectedPlatform</h4>
+  <div class="markdown level1 summary"><p>Returns the moving platform that the motor is coupled with. If null then no moving platform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MovingPlatformMotor2D connectedPlatform { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.Examples.PC2D.MovingPlatformMotor2D.html">MovingPlatformMotor2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_dashDirection_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.dashDirection*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_dashDirection" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.dashDirection">dashDirection</h4>
+  <div class="markdown level1 summary"><p>Returns the direction of the current dash. If not dashing then returns Vector2.zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 dashDirection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_dashDistanceCalculated_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.dashDistanceCalculated*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_dashDistanceCalculated" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.dashDistanceCalculated">dashDistanceCalculated</h4>
+  <div class="markdown level1 summary"><p>This is the distance calculated for dashed. Not be confused with distanceDashed. This doesn't care if the motor has
+hit a wall.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float dashDistanceCalculated { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_distanceDashed_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.distanceDashed*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_distanceDashed" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.distanceDashed">distanceDashed</h4>
+  <div class="markdown level1 summary"><p>Returns the amount of distance dashed. If not dashing then returns 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float distanceDashed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_facingLeft_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.facingLeft*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_facingLeft" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.facingLeft">facingLeft</h4>
+  <div class="markdown level1 summary"><p>Since the motor needs to know the facing of the object, this information is made available to anyone else who might need
+it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool facingLeft { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_fallFast_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.fallFast*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_fallFast" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.fallFast">fallFast</h4>
+  <div class="markdown level1 summary"><p>Set this true to have the motor fall faster. Set to false to fall at normal speeds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool fallFast { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_frozen_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.frozen*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_frozen" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.frozen">frozen</h4>
+  <div class="markdown level1 summary"><p>Setting frozen to true will put the motor in a 'frozen' state. All information will be saved and set once unfrozen
+(the motor also reduces gravity to 0).</p>
+<p>Note: This isn't a way to turn off the motor. To turn off the motor, simply set the script to disabled.
+Note: No delegate (onXXX) will be called</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool frozen { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_inArea_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.inArea*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_inArea" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.inArea">inArea</h4>
+  <div class="markdown level1 summary"><p>The Areas the motor is currently in.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlatformerMotor2D.CollidedArea inArea { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.CollidedArea.html">PlatformerMotor2D.CollidedArea</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_jumpingHeld_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.jumpingHeld*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_jumpingHeld" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.jumpingHeld">jumpingHeld</h4>
+  <div class="markdown level1 summary"><p>If jumpingHeld is set to true then the motor will jump further. Set to false if jumping isn't 'held'.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool jumpingHeld { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ladderZone_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ladderZone*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ladderZone" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ladderZone">ladderZone</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlatformerMotor2D.LadderZone ladderZone { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.LadderZone.html">PlatformerMotor2D.LadderZone</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_motorState_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.motorState*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_motorState" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.motorState">motorState</h4>
+  <div class="markdown level1 summary"><p>Call this to get state information about the motor. This will be information such as if the object is in the air or on the
+ground. This can be used to set the appropriate animations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlatformerMotor2D.MotorState motorState { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.MotorState.html">PlatformerMotor2D.MotorState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_normalizedXMovement_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.normalizedXMovement*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_normalizedXMovement" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.normalizedXMovement">normalizedXMovement</h4>
+  <div class="markdown level1 summary"><p>Set the x movement direction. This is multiplied by the max speed. -1 is full left, 1 is full right. Higher numbers will
+result in faster speed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float normalizedXMovement { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_normalizedYMovement_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.normalizedYMovement*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_normalizedYMovement" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.normalizedYMovement">normalizedYMovement</h4>
+  <div class="markdown level1 summary"><p>Set the y movement direction. This is multiplied by the max speed. -1 is full left, 1 is full right. Higher numbers will
+result in faster speed.
+Only used for ladders</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float normalizedYMovement { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_onSlope_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.onSlope*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_onSlope" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.onSlope">onSlope</h4>
+  <div class="markdown level1 summary"><p>Whether or not the motor is on a slope. This can be simply walking on a slope or slipping.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool onSlope { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_timeScale_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.timeScale*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_timeScale" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.timeScale">timeScale</h4>
+  <div class="markdown level1 summary"><p>Set the time scale for the motor. This is independent of the global time scale. Negative values are not supported.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float timeScale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_velocity_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.velocity*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_velocity" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.velocity">velocity</h4>
+  <div class="markdown level1 summary"><p>The velocity of the motor. This should be queried instead of the rigidbody's velocity. Setting this during a dash doesn't
+have any meaning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 velocity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ClearRestrictedArea_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ClearRestrictedArea*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ClearRestrictedArea" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ClearRestrictedArea">ClearRestrictedArea()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearRestrictedArea()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_Dash_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.Dash*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_Dash" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.Dash">Dash()</h4>
+  <div class="markdown level1 summary"><p>Call this to have the motor try to dash, once called it will be handled in the FixedUpdate tick.
+This causes the object to dash along their facing (if left or right for side scrollers).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dash()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_Dash_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.Dash*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_Dash_Vector2_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.Dash(Vector2)">Dash(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Send a direction vector to dash allow dashing in a specific direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dash(Vector2 dir)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">dir</span></td>
+        <td><p>The normalized direction of the dash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_DisableRestrictedArea_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.DisableRestrictedArea*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_DisableRestrictedArea" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.DisableRestrictedArea">DisableRestrictedArea()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableRestrictedArea()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_DisconnectFromPlatform_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.DisconnectFromPlatform*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_DisconnectFromPlatform" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.DisconnectFromPlatform">DisconnectFromPlatform()</h4>
+  <div class="markdown level1 summary"><p>Decouples the motor from the platform. This could be useful for a platform that throw the motor in the air. Call this
+when when the motor should disconnect then set the appropriate velocity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisconnectFromPlatform()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_EnableRestrictedArea_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.EnableRestrictedArea*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_EnableRestrictedArea" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.EnableRestrictedArea">EnableRestrictedArea()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableRestrictedArea()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_EndDash_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.EndDash*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_EndDash" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.EndDash">EndDash()</h4>
+  <div class="markdown level1 summary"><p>Call to end dash immediately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndDash()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_EndJump_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.EndJump*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_EndJump" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.EndJump">EndJump()</h4>
+  <div class="markdown level1 summary"><p>Call to end a jump. Causes the motor to stop calculated held speed for a jump.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndJump()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ForceDash_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ForceDash*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ForceDash" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ForceDash">ForceDash()</h4>
+  <div class="markdown level1 summary"><p>Forces the motor to dash regardless if the motor thinks it is valid or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceDash()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ForceDash_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ForceDash*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ForceDash_Vector2_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ForceDash(Vector2)">ForceDash(Vector2)</h4>
+  <div class="markdown level1 summary"><p>Forces a dash along a specified direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceDash(Vector2 dir)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td><span class="parametername">dir</span></td>
+        <td><p>The normalized direction of the dash.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ForceJump_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ForceJump*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ForceJump" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ForceJump">ForceJump()</h4>
+  <div class="markdown level1 summary"><p>This will force a jump to occur even if the motor doesn't think a jump is valid. This function will not work if the motor
+is dashing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceJump()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ForceJump_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ForceJump*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ForceJump_System_Single_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ForceJump(System.Single)">ForceJump(Single)</h4>
+  <div class="markdown level1 summary"><p>Force a jump with a custom height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceJump(float customHeight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">customHeight</span></td>
+        <td><p>The height the motor should jump to. The extraJumpHeight is still applicable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_FreedomAreaEnter_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.FreedomAreaEnter*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_FreedomAreaEnter" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.FreedomAreaEnter">FreedomAreaEnter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreedomAreaEnter()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_FreedomAreaExit_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.FreedomAreaExit*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_FreedomAreaExit" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.FreedomAreaExit">FreedomAreaExit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreedomAreaExit()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_FreedomStateEnter_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.FreedomStateEnter*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_FreedomStateEnter" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.FreedomStateEnter">FreedomStateEnter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreedomStateEnter()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_FreedomStateExit_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.FreedomStateExit*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_FreedomStateExit" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.FreedomStateExit">FreedomStateExit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FreedomStateExit()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsDashing_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsDashing*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsDashing" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsDashing">IsDashing()</h4>
+  <div class="markdown level1 summary"><p>Is the motor Dashing?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDashing()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsFalling_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsFalling*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsFalling" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsFalling">IsFalling()</h4>
+  <div class="markdown level1 summary"><p>is the motor falling? do not include failling fast.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFalling()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsFallingFast_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsFallingFast*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsFallingFast" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsFallingFast">IsFallingFast()</h4>
+  <div class="markdown level1 summary"><p>is the motor falling fast? do not include failling (normal).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFallingFast()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsForceSlipping_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsForceSlipping*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsForceSlipping" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsForceSlipping">IsForceSlipping()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsForceSlipping()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsGrounded_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsGrounded*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsGrounded" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsGrounded">IsGrounded()</h4>
+  <div class="markdown level1 summary"><p>Motor is standing on the floor. Does not include Sliding</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsGrounded()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsInAir_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsInAir*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsInAir" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsInAir">IsInAir()</h4>
+  <div class="markdown level1 summary"><p>Motor is in mid air?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInAir()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsJumping_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsJumping*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsJumping" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsJumping">IsJumping()</h4>
+  <div class="markdown level1 summary"><p>Is the motor Jumping? include walljumps and airjumps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsJumping()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsMovingPlatform_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsMovingPlatform*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsMovingPlatform_GameObject_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsMovingPlatform(GameObject)">IsMovingPlatform(GameObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMovingPlatform(GameObject obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsOnCorner_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsOnCorner*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsOnCorner" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsOnCorner">IsOnCorner()</h4>
+  <div class="markdown level1 summary"><p>Motor is on corner?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOnCorner()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsOnFreedomArea_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsOnFreedomArea*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsOnFreedomArea" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsOnFreedomArea">IsOnFreedomArea()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOnFreedomArea()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsOnGround_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsOnGround*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsOnGround" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsOnGround">IsOnGround()</h4>
+  <div class="markdown level1 summary"><p>Motor is standing onto something?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOnGround()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsOnLadder_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsOnLadder*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsOnLadder" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsOnLadder">IsOnLadder()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOnLadder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsOnWall_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsOnWall*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsOnWall" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsOnWall">IsOnWall()</h4>
+  <div class="markdown level1 summary"><p>Motor is sticking on a wall or on corner or slidding on a wall.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsOnWall()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsRestricted_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsRestricted*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsRestricted" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsRestricted">IsRestricted()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRestricted()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsSlipping_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsSlipping*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsSlipping" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsSlipping">IsSlipping()</h4>
+  <div class="markdown level1 summary"><p>Motor is Slipping?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSlipping()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsStatic_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsStatic*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsStatic_GameObject_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsStatic(GameObject)">IsStatic(GameObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsStatic(GameObject obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsUserHandled_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsUserHandled*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsUserHandled" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsUserHandled">IsUserHandled()</h4>
+  <div class="markdown level1 summary"><p>is the motor Jumping? include walljumps and airjumps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsUserHandled()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsWallSliding_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsWallSliding*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsWallSliding" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsWallSliding">IsWallSliding()</h4>
+  <div class="markdown level1 summary"><p>Motor is sliding on wall?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsWallSliding()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsWallSticking_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsWallSticking*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_IsWallSticking" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.IsWallSticking">IsWallSticking()</h4>
+  <div class="markdown level1 summary"><p>is the motor stick to a wall?
+Use PressingIntoLeftWall, PressingIntoRightWall to know what wall.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsWallSticking()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_Jump_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.Jump*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_Jump" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.Jump">Jump()</h4>
+  <div class="markdown level1 summary"><p>Call this to have the GameObject try to jump, once called it will be handled in the FixedUpdate tick. The y axis is
+considered jump.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Jump()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_Jump_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.Jump*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_Jump_System_Single_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.Jump(System.Single)">Jump(Single)</h4>
+  <div class="markdown level1 summary"><p>Jump that allows a custom height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Jump(float customHeight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">customHeight</span></td>
+        <td><p>The height the motor should jump to. The extraJumpHeight is still applicable.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_LadderAreaEnter_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.LadderAreaEnter*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_LadderAreaEnter_Bounds_System_Single_System_Single_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.LadderAreaEnter(Bounds,System.Single,System.Single)">LadderAreaEnter(Bounds, Single, Single)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LadderAreaEnter(Bounds area, float topHeight = 0F, float bottomHeight = 0F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Bounds</span></td>
+        <td><span class="parametername">area</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">topHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">bottomHeight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_LadderAreaExit_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.LadderAreaExit*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_LadderAreaExit" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.LadderAreaExit">LadderAreaExit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LadderAreaExit()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ResetAirJump_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ResetAirJump*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ResetAirJump" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ResetAirJump">ResetAirJump()</h4>
+  <div class="markdown level1 summary"><p>Resets the state for air jumps by setting the counter to 0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetAirJump()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ResetDashCooldown_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ResetDashCooldown*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_ResetDashCooldown" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.ResetDashCooldown">ResetDashCooldown()</h4>
+  <div class="markdown level1 summary"><p>Reset the cooldown for dash.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetDashCooldown()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_SetLadderZone_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.SetLadderZone*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_SetLadderZone_Edgar_Unity_Examples_PC2D_PlatformerMotor2D_LadderZone_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.SetLadderZone(Edgar.Unity.Examples.PC2D.PlatformerMotor2D.LadderZone)">SetLadderZone(PlatformerMotor2D.LadderZone)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLadderZone(PlatformerMotor2D.LadderZone z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.LadderZone.html">PlatformerMotor2D.LadderZone</a></td>
+        <td><span class="parametername">z</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_SetRestrictedArea_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.SetRestrictedArea*"></a>
+  <h4 id="Edgar_Unity_Examples_PC2D_PlatformerMotor2D_SetRestrictedArea_Bounds_System_Boolean_" data-uid="Edgar.Unity.Examples.PC2D.PlatformerMotor2D.SetRestrictedArea(Bounds,System.Boolean)">SetRestrictedArea(Bounds, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRestrictedArea(Bounds b, bool disableTop = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Bounds</span></td>
+        <td><span class="parametername">b</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">disableTop</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

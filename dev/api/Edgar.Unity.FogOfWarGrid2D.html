@@ -1,0 +1,794 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FogOfWarGrid2D
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FogOfWarGrid2D
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.Unity.FogOfWarGrid2D">
+  
+  
+  <h1 id="Edgar_Unity_FogOfWarGrid2D" data-uid="Edgar.Unity.FogOfWarGrid2D" class="text-break">Class FogOfWarGrid2D
+  </h1>
+  <div class="markdown level0 summary"><p>The main class of the Fog of War feature. (PRO version only)</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">FogOfWarGrid2D</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.Unity.html">Edgar.Unity</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Edgar_Unity_FogOfWarGrid2D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FogOfWarGrid2D : MonoBehaviour</code></pre>
+  </div>
+  <h5 id="Edgar_Unity_FogOfWarGrid2D_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class has to be placed on the game object with the camera to which should the effect be applied.
+See online documentation for information on how to use this feature.</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_ColorMode" data-uid="Edgar.Unity.FogOfWarGrid2D.ColorMode">ColorMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FogOfWarColorMode ColorMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.FogOfWarColorMode.html">FogOfWarColorMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_FadeInDuration" data-uid="Edgar.Unity.FogOfWarGrid2D.FadeInDuration">FadeInDuration</h4>
+  <div class="markdown level1 summary"><p>How long should it take to reveal a tile in the fadeIn mode (in seconds).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FadeInDuration</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_FogColor" data-uid="Edgar.Unity.FogOfWarGrid2D.FogColor">FogColor</h4>
+  <div class="markdown level1 summary"><p>Color of tiles that are hidden in the fog.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color FogColor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_FogSmoothness" data-uid="Edgar.Unity.FogOfWarGrid2D.FogSmoothness">FogSmoothness</h4>
+  <div class="markdown level1 summary"><p>Controls how many possible fog values there are for every pixel.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FogSmoothness</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_InitialFogTransparency" data-uid="Edgar.Unity.FogOfWarGrid2D.InitialFogTransparency">InitialFogTransparency</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float InitialFogTransparency</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_Mode" data-uid="Edgar.Unity.FogOfWarGrid2D.Mode">Mode</h4>
+  <div class="markdown level1 summary"><p>Mode of the Fog of War effect. Is is either Wave or FadeIn.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FogOfWarMode Mode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.FogOfWarMode.html">FogOfWarMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_Unity_FogOfWarGrid2D_Mode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Wave - tiles are revealed based on the distance from the player.
+FadeIn - tiles are revealed uniformly.</p>
+<p>Some fields in the inspector are only revealed when a specific mode is used.</p>
+</div>
+  
+  
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_RevealCorridors" data-uid="Edgar.Unity.FogOfWarGrid2D.RevealCorridors">RevealCorridors</h4>
+  <div class="markdown level1 summary"><p>Whether to reveal nearby tiles of neighboring corridors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RevealCorridors</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_RevealCorridorsGradually" data-uid="Edgar.Unity.FogOfWarGrid2D.RevealCorridorsGradually">RevealCorridorsGradually</h4>
+  <div class="markdown level1 summary"><p>Whether to reveal neighboring corridor tiles gradually.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RevealCorridorsGradually</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_RevealCorridorsTiles" data-uid="Edgar.Unity.FogOfWarGrid2D.RevealCorridorsTiles">RevealCorridorsTiles</h4>
+  <div class="markdown level1 summary"><p>How many tiles of neighboring corridors should be revealed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RevealCorridorsTiles</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_TileGranularity" data-uid="Edgar.Unity.FogOfWarGrid2D.TileGranularity">TileGranularity</h4>
+  <div class="markdown level1 summary"><p>Controls into how many pixel chunks is each tile divided.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TileGranularity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_TransitionMode" data-uid="Edgar.Unity.FogOfWarGrid2D.TransitionMode">TransitionMode</h4>
+  <div class="markdown level1 summary"><p>Transition mode of the effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FogOfWarTransitionMode TransitionMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.FogOfWarTransitionMode.html">FogOfWarTransitionMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_Unity_FogOfWarGrid2D_TransitionMode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Smooth mode interpolates values between neighboring tiles while the TileBased mode does not.</p>
+</div>
+  
+  
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_WaveOrigin" data-uid="Edgar.Unity.FogOfWarGrid2D.WaveOrigin">WaveOrigin</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform WaveOrigin</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_WaveRevealThreshold" data-uid="Edgar.Unity.FogOfWarGrid2D.WaveRevealThreshold">WaveRevealThreshold</h4>
+  <div class="markdown level1 summary"><p>How much time should the tile be completely hidden before revealing it (see online docs).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float WaveRevealThreshold</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_WaveSpeed" data-uid="Edgar.Unity.FogOfWarGrid2D.WaveSpeed">WaveSpeed</h4>
+  <div class="markdown level1 summary"><p>Speed of the wave (tiles per second) when in Wave mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float WaveSpeed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Edgar_Unity_FogOfWarGrid2D_Instance_" data-uid="Edgar.Unity.FogOfWarGrid2D.Instance*"></a>
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_Instance" data-uid="Edgar.Unity.FogOfWarGrid2D.Instance">Instance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FogOfWarGrid2D Instance { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.FogOfWarGrid2D.html">FogOfWarGrid2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_Unity_FogOfWarGrid2D_Awake_" data-uid="Edgar.Unity.FogOfWarGrid2D.Awake*"></a>
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_Awake" data-uid="Edgar.Unity.FogOfWarGrid2D.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Awake()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_Unity_FogOfWarGrid2D_GetMaterial_" data-uid="Edgar.Unity.FogOfWarGrid2D.GetMaterial*"></a>
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_GetMaterial_Camera_" data-uid="Edgar.Unity.FogOfWarGrid2D.GetMaterial(Camera)">GetMaterial(Camera)</h4>
+  <div class="markdown level1 summary"><p>Gets the updated material that can be used to apply the image post-processing effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Material GetMaterial(Camera camera)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Camera</span></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Material</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_Unity_FogOfWarGrid2D_GetMaterial_Camera__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method must be called in each frame to get the current fog of war information.
+This method is usually called internally by the tool so you do not have to call it manually.</p>
+</div>
+  
+  
+  <a id="Edgar_Unity_FogOfWarGrid2D_GetRevealedRooms_" data-uid="Edgar.Unity.FogOfWarGrid2D.GetRevealedRooms*"></a>
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_GetRevealedRooms" data-uid="Edgar.Unity.FogOfWarGrid2D.GetRevealedRooms">GetRevealedRooms()</h4>
+  <div class="markdown level1 summary"><p>Gets all the rooms that are currently revealed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;RoomInstanceGrid2D&gt; GetRevealedRooms()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyList</span>&lt;<a class="xref" href="Edgar.Unity.RoomInstanceGrid2D.html">RoomInstanceGrid2D</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_Unity_FogOfWarGrid2D_GetRevealedRooms_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method might be useful if you want to save the game and then load it later.
+Call this method when saving the game and then use RevealRooms() when loading the game.</p>
+</div>
+  
+  
+  <a id="Edgar_Unity_FogOfWarGrid2D_Reload_" data-uid="Edgar.Unity.FogOfWarGrid2D.Reload*"></a>
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_Reload_System_Boolean_" data-uid="Edgar.Unity.FogOfWarGrid2D.Reload(System.Boolean)">Reload(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Reloads the component, taking already revealed rooms and revealing them again.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reload(bool revealImmediately = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">revealImmediately</span></td>
+        <td><p>Whether to reveal the rooms immediately without any animation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_FogOfWarGrid2D_RevealRoom_" data-uid="Edgar.Unity.FogOfWarGrid2D.RevealRoom*"></a>
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_RevealRoom_Edgar_Unity_RoomInstanceGrid2D_System_Nullable_Vector3__System_Boolean_" data-uid="Edgar.Unity.FogOfWarGrid2D.RevealRoom(Edgar.Unity.RoomInstanceGrid2D,System.Nullable{Vector3},System.Boolean)">RevealRoom(RoomInstanceGrid2D, Nullable&lt;Vector3&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Reveals a given room.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RevealRoom(RoomInstanceGrid2D room, Vector3? waveOrigin = default(Vector3? ), bool revealImmediately = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.RoomInstanceGrid2D.html">RoomInstanceGrid2D</a></td>
+        <td><span class="parametername">room</span></td>
+        <td><p>Room to be revealed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">waveOrigin</span></td>
+        <td><p>Origin of the wave if the WaveMode is used. If provided, it overrides the waveOrigin given to the Setup() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">revealImmediately</span></td>
+        <td><p>Whether to reveal the room immediately without any animation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_FogOfWarGrid2D_RevealRoomAndNeighbors_" data-uid="Edgar.Unity.FogOfWarGrid2D.RevealRoomAndNeighbors*"></a>
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_RevealRoomAndNeighbors_Edgar_Unity_RoomInstanceGrid2D_System_Nullable_Vector3__System_Boolean_" data-uid="Edgar.Unity.FogOfWarGrid2D.RevealRoomAndNeighbors(Edgar.Unity.RoomInstanceGrid2D,System.Nullable{Vector3},System.Boolean)">RevealRoomAndNeighbors(RoomInstanceGrid2D, Nullable&lt;Vector3&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Reveals a given room and all its neighboring rooms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RevealRoomAndNeighbors(RoomInstanceGrid2D room, Vector3? waveOrigin = default(Vector3? ), bool revealImmediately = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.RoomInstanceGrid2D.html">RoomInstanceGrid2D</a></td>
+        <td><span class="parametername">room</span></td>
+        <td><p>Room to be revealed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">waveOrigin</span></td>
+        <td><p>Origin of the wave if the WaveMode is used. If provided, it overrides the waveOrigin given to the Setup() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">revealImmediately</span></td>
+        <td><p>Whether to reveal the room immediately without any animation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_FogOfWarGrid2D_RevealRooms_" data-uid="Edgar.Unity.FogOfWarGrid2D.RevealRooms*"></a>
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_RevealRooms_System_Collections_Generic_List_Edgar_Unity_RoomInstanceGrid2D__System_Nullable_Vector3__System_Boolean_" data-uid="Edgar.Unity.FogOfWarGrid2D.RevealRooms(System.Collections.Generic.List{Edgar.Unity.RoomInstanceGrid2D},System.Nullable{Vector3},System.Boolean)">RevealRooms(List&lt;RoomInstanceGrid2D&gt;, Nullable&lt;Vector3&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Reveals given rooms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RevealRooms(List&lt;RoomInstanceGrid2D&gt; rooms, Vector3? waveOrigin = default(Vector3? ), bool revealImmediately = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Edgar.Unity.RoomInstanceGrid2D.html">RoomInstanceGrid2D</a>&gt;</td>
+        <td><span class="parametername">rooms</span></td>
+        <td><p>Rooms to be revealed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">waveOrigin</span></td>
+        <td><p>Origin of the wave if the WaveMode is used. If provided, it overrides the waveOrigin given to the Setup() method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">revealImmediately</span></td>
+        <td><p>Whether to reveal the rooms immediately without any animation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_FogOfWarGrid2D_Setup_" data-uid="Edgar.Unity.FogOfWarGrid2D.Setup*"></a>
+  <h4 id="Edgar_Unity_FogOfWarGrid2D_Setup_GameObject_Transform_" data-uid="Edgar.Unity.FogOfWarGrid2D.Setup(GameObject,Transform)">Setup(GameObject, Transform)</h4>
+  <div class="markdown level1 summary"><p>Setups the component, must be called every time after a level is generated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Setup(GameObject generatedLevelRoot, Transform waveOrigin = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">generatedLevelRoot</span></td>
+        <td><p>Root game object of the generated level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Transform</span></td>
+        <td><span class="parametername">waveOrigin</span></td>
+        <td><p>Origin of the fog reveal animation if the Wave mode is used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_Unity_FogOfWarGrid2D_Setup_GameObject_Transform__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The waveOrigin parameter is optional if the FadeIn mode is used.
+The waveOrigin parameter is optional if the waveOrigin position is provided when calling one of the RevealRoom methods.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

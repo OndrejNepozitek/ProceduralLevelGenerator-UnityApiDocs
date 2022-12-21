@@ -1,0 +1,525 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DoorLineGrid3D
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DoorLineGrid3D
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.Unity.DoorLineGrid3D">
+  
+  
+  <h1 id="Edgar_Unity_DoorLineGrid3D" data-uid="Edgar.Unity.DoorLineGrid3D" class="text-break">Class DoorLineGrid3D
+  </h1>
+  <div class="markdown level0 summary"><p>A simple data class that holds information about a single door line.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DoorLineGrid3D</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Edgar.Unity.IDoorLine.html">IDoorLine</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.Unity.html">Edgar.Unity</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Edgar_Unity_DoorLineGrid3D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DoorLineGrid3D : IDoorLine</code></pre>
+  </div>
+  <h5 id="Edgar_Unity_DoorLineGrid3D_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The door line is represented as tiles rather than points.</p>
+<p>Why not use DoorHandlerGrid3D directly?
+DoorHandlerGrid3D is a MonoBehaviour which means that it is not easy to store it and create new instance.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Edgar_Unity_DoorLineGrid3D__ctor_" data-uid="Edgar.Unity.DoorLineGrid3D.#ctor*"></a>
+  <h4 id="Edgar_Unity_DoorLineGrid3D__ctor_Vector3Int_Vector3Int_System_Int32_System_Int32_Edgar_Unity_DoorHandlerGrid3D_Vector3Int_Edgar_Unity_DoorSocketBase_Edgar_Unity_DoorDirection_" data-uid="Edgar.Unity.DoorLineGrid3D.#ctor(Vector3Int,Vector3Int,System.Int32,System.Int32,Edgar.Unity.DoorHandlerGrid3D,Vector3Int,Edgar.Unity.DoorSocketBase,Edgar.Unity.DoorDirection)">DoorLineGrid3D(Vector3Int, Vector3Int, Int32, Int32, DoorHandlerGrid3D, Vector3Int, DoorSocketBase, DoorDirection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoorLineGrid3D(Vector3Int from, Vector3Int to, int width, int height, DoorHandlerGrid3D doorHandler, Vector3Int directionVector, DoorSocketBase socket, DoorDirection direction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DoorHandlerGrid3D.html">DoorHandlerGrid3D</a></td>
+        <td><span class="parametername">doorHandler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td><span class="parametername">directionVector</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DoorSocketBase.html">DoorSocketBase</a></td>
+        <td><span class="parametername">socket</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DoorDirection.html">DoorDirection</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Edgar_Unity_DoorLineGrid3D_Direction_" data-uid="Edgar.Unity.DoorLineGrid3D.Direction*"></a>
+  <h4 id="Edgar_Unity_DoorLineGrid3D_Direction" data-uid="Edgar.Unity.DoorLineGrid3D.Direction">Direction</h4>
+  <div class="markdown level1 summary"><p>Direction of the door when it comes to entrances/exits.
+Each door is undirected by default, meaning it can serve both as an entrance and an exit.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoorDirection Direction { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DoorDirection.html">DoorDirection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_DoorLineGrid3D_DirectionVector_" data-uid="Edgar.Unity.DoorLineGrid3D.DirectionVector*"></a>
+  <h4 id="Edgar_Unity_DoorLineGrid3D_DirectionVector" data-uid="Edgar.Unity.DoorLineGrid3D.DirectionVector">DirectionVector</h4>
+  <div class="markdown level1 summary"><p>Direction vector of the door.
+If you go clockwise on the outline of the room template and assign a direction to each side of polygon,
+the direction of the door is equal to the direction of the polygon side to which it belongs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3Int DirectionVector { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_Unity_DoorLineGrid3D_DirectionVector_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It holds that From + Direction * (Width - 1) == To.
+The Up direction is the same as Vector3Int.Up.</p>
+</div>
+  
+  
+  <a id="Edgar_Unity_DoorLineGrid3D_DoorHandler_" data-uid="Edgar.Unity.DoorLineGrid3D.DoorHandler*"></a>
+  <h4 id="Edgar_Unity_DoorLineGrid3D_DoorHandler" data-uid="Edgar.Unity.DoorLineGrid3D.DoorHandler">DoorHandler</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoorHandlerGrid3D DoorHandler { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DoorHandlerGrid3D.html">DoorHandlerGrid3D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_DoorLineGrid3D_From_" data-uid="Edgar.Unity.DoorLineGrid3D.From*"></a>
+  <h4 id="Edgar_Unity_DoorLineGrid3D_From" data-uid="Edgar.Unity.DoorLineGrid3D.From">From</h4>
+  <div class="markdown level1 summary"><p>The first tile of the door.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3Int From { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_DoorLineGrid3D_Height_" data-uid="Edgar.Unity.DoorLineGrid3D.Height*"></a>
+  <h4 id="Edgar_Unity_DoorLineGrid3D_Height" data-uid="Edgar.Unity.DoorLineGrid3D.Height">Height</h4>
+  <div class="markdown level1 summary"><p>Width of the door (number of tiles).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Height { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_DoorLineGrid3D_Socket_" data-uid="Edgar.Unity.DoorLineGrid3D.Socket*"></a>
+  <h4 id="Edgar_Unity_DoorLineGrid3D_Socket" data-uid="Edgar.Unity.DoorLineGrid3D.Socket">Socket</h4>
+  <div class="markdown level1 summary"><p>Socket of the door, can be null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoorSocketBase Socket { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DoorSocketBase.html">DoorSocketBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_DoorLineGrid3D_To_" data-uid="Edgar.Unity.DoorLineGrid3D.To*"></a>
+  <h4 id="Edgar_Unity_DoorLineGrid3D_To" data-uid="Edgar.Unity.DoorLineGrid3D.To">To</h4>
+  <div class="markdown level1 summary"><p>The last tile of the door.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3Int To { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_Unity_DoorLineGrid3D_To_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It can be equal to the From field if the width is equal to 1.</p>
+</div>
+  
+  
+  <a id="Edgar_Unity_DoorLineGrid3D_Width_" data-uid="Edgar.Unity.DoorLineGrid3D.Width*"></a>
+  <h4 id="Edgar_Unity_DoorLineGrid3D_Width" data-uid="Edgar.Unity.DoorLineGrid3D.Width">Width</h4>
+  <div class="markdown level1 summary"><p>Width of the door (number of tiles).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Width { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_Unity_DoorLineGrid3D_Get3DBounds_" data-uid="Edgar.Unity.DoorLineGrid3D.Get3DBounds*"></a>
+  <h4 id="Edgar_Unity_DoorLineGrid3D_Get3DBounds_System_Boolean_" data-uid="Edgar.Unity.DoorLineGrid3D.Get3DBounds(System.Boolean)">Get3DBounds(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Computes the bounds of the door in the 3D space.
+Mostly used for gizmo purposes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoundsInt Get3DBounds(bool includeRepeat = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">includeRepeat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">BoundsInt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_Unity_DoorLineGrid3D_Get3DBounds_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The bounds are represented as points bounding the door (which is described in tiles).</p>
+</div>
+  
+  
+  <a id="Edgar_Unity_DoorLineGrid3D_GetFacingDirection_" data-uid="Edgar.Unity.DoorLineGrid3D.GetFacingDirection*"></a>
+  <h4 id="Edgar_Unity_DoorLineGrid3D_GetFacingDirection" data-uid="Edgar.Unity.DoorLineGrid3D.GetFacingDirection">GetFacingDirection()</h4>
+  <div class="markdown level1 summary"><p>Gets the facing direction of the door.
+&quot;Facing&quot; means the direction that points outside the current room.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3Int GetFacingDirection()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3Int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Edgar_Unity_DoorLineGrid3D_Edgar_Unity_IDoorLine_Length_" data-uid="Edgar.Unity.DoorLineGrid3D.Edgar#Unity#IDoorLine#Length*"></a>
+  <h4 id="Edgar_Unity_DoorLineGrid3D_Edgar_Unity_IDoorLine_Length" data-uid="Edgar.Unity.DoorLineGrid3D.Edgar#Unity#IDoorLine#Length">IDoorLine.Length</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int IDoorLine.Length { get; }</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Edgar.Unity.IDoorLine.html">IDoorLine</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DungeonGeneratorPostProcessingGrid2D
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DungeonGeneratorPostProcessingGrid2D
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.Unity.DungeonGeneratorPostProcessingGrid2D">
+  
+  
+  <h1 id="Edgar_Unity_DungeonGeneratorPostProcessingGrid2D" data-uid="Edgar.Unity.DungeonGeneratorPostProcessingGrid2D" class="text-break">Class DungeonGeneratorPostProcessingGrid2D
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for custom post-processing logic.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DungeonGeneratorPostProcessingGrid2D</span></div>
+      <div class="level2"><a class="xref" href="Edgar.Unity.Examples.CurrentRoomDetection.CurrentRoomDetectionPostProcessing.html">CurrentRoomDetectionPostProcessing</a></div>
+      <div class="level2"><a class="xref" href="Edgar.Unity.Examples.Example1.Example1PostProcessing.html">Example1PostProcessing</a></div>
+      <div class="level2"><a class="xref" href="Edgar.Unity.Examples.FogOfWarExample.FogOfWarExamplePostProcessing.html">FogOfWarExamplePostProcessing</a></div>
+      <div class="level2"><a class="xref" href="Edgar.Unity.Examples.Gungeon.GungeonPostProcessingTask.html">GungeonPostProcessingTask</a></div>
+      <div class="level2"><a class="xref" href="Edgar.Unity.Examples.Metroidvania.MetroidvaniaPostProcessingTask.html">MetroidvaniaPostProcessingTask</a></div>
+      <div class="level2"><a class="xref" href="Edgar.Unity.Examples.Metroidvania.MetroidvaniaRooftopPostProcessTask.html">MetroidvaniaRooftopPostProcessTask</a></div>
+      <div class="level2"><a class="xref" href="Edgar.Unity.Examples.MinimapExample.MinimapExampleSetup.html">MinimapExampleSetup</a></div>
+      <div class="level2"><a class="xref" href="Edgar.Unity.Examples.MinimapExample.MinimapExampleSetupLegacy.html">MinimapExampleSetupLegacy</a></div>
+      <div class="level2"><a class="xref" href="Edgar.Unity.Examples.Resources.MyCustomPostProcessing.html">MyCustomPostProcessing</a></div>
+      <div class="level2"><a class="xref" href="Edgar.Unity.Examples.Resources.MyCustomPostProcessingComponent.html">MyCustomPostProcessingComponent</a></div>
+      <div class="level2"><a class="xref" href="Edgar.Unity.Examples.Scripts.Platformer1PostProcessing.html">Platformer1PostProcessing</a></div>
+      <div class="level2"><a class="xref" href="Edgar.Unity.MinimapPostProcessGrid2D.html">MinimapPostProcessGrid2D</a></div>
+      <div class="level2"><a class="xref" href="Edgar.Unity.MinimapPostProcessLegacy.html">MinimapPostProcessLegacy</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Edgar.Unity.IDungeonGeneratorPostProcessing-2.html">IDungeonGeneratorPostProcessing</a>&lt;<a class="xref" href="Edgar.Unity.DungeonGeneratorLevelGrid2D.html">DungeonGeneratorLevelGrid2D</a>, <a class="xref" href="Edgar.Unity.DungeonGeneratorCallbacksGrid2D.html">DungeonGeneratorCallbacksGrid2D</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.Unity.html">Edgar.Unity</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Edgar_Unity_DungeonGeneratorPostProcessingGrid2D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DungeonGeneratorPostProcessingGrid2D : ScriptableObject, IDungeonGeneratorPostProcessing&lt;DungeonGeneratorLevelGrid2D, DungeonGeneratorCallbacksGrid2D&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Edgar_Unity_DungeonGeneratorPostProcessingGrid2D_Random_" data-uid="Edgar.Unity.DungeonGeneratorPostProcessingGrid2D.Random*"></a>
+  <h4 id="Edgar_Unity_DungeonGeneratorPostProcessingGrid2D_Random" data-uid="Edgar.Unity.DungeonGeneratorPostProcessingGrid2D.Random">Random</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Random Random { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Random</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_Unity_DungeonGeneratorPostProcessingGrid2D_RegisterCallbacks_" data-uid="Edgar.Unity.DungeonGeneratorPostProcessingGrid2D.RegisterCallbacks*"></a>
+  <h4 id="Edgar_Unity_DungeonGeneratorPostProcessingGrid2D_RegisterCallbacks_Edgar_Unity_DungeonGeneratorCallbacksGrid2D_" data-uid="Edgar.Unity.DungeonGeneratorPostProcessingGrid2D.RegisterCallbacks(Edgar.Unity.DungeonGeneratorCallbacksGrid2D)">RegisterCallbacks(DungeonGeneratorCallbacksGrid2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RegisterCallbacks(DungeonGeneratorCallbacksGrid2D callbacks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DungeonGeneratorCallbacksGrid2D.html">DungeonGeneratorCallbacksGrid2D</a></td>
+        <td><span class="parametername">callbacks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_DungeonGeneratorPostProcessingGrid2D_Run_" data-uid="Edgar.Unity.DungeonGeneratorPostProcessingGrid2D.Run*"></a>
+  <h4 id="Edgar_Unity_DungeonGeneratorPostProcessingGrid2D_Run_Edgar_Unity_DungeonGeneratorLevelGrid2D_" data-uid="Edgar.Unity.DungeonGeneratorPostProcessingGrid2D.Run(Edgar.Unity.DungeonGeneratorLevelGrid2D)">Run(DungeonGeneratorLevelGrid2D)</h4>
+  <div class="markdown level1 summary"><p>Runs the post-processing logic with a given generated level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Run(DungeonGeneratorLevelGrid2D level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DungeonGeneratorLevelGrid2D.html">DungeonGeneratorLevelGrid2D</a></td>
+        <td><span class="parametername">level</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_DungeonGeneratorPostProcessingGrid2D_SetRandomGenerator_" data-uid="Edgar.Unity.DungeonGeneratorPostProcessingGrid2D.SetRandomGenerator*"></a>
+  <h4 id="Edgar_Unity_DungeonGeneratorPostProcessingGrid2D_SetRandomGenerator_Random_" data-uid="Edgar.Unity.DungeonGeneratorPostProcessingGrid2D.SetRandomGenerator(Random)">SetRandomGenerator(Random)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRandomGenerator(Random random)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Random</span></td>
+        <td><span class="parametername">random</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Edgar.Unity.IDungeonGeneratorPostProcessing-2.html">IDungeonGeneratorPostProcessing&lt;TLevel, TCallbacks&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

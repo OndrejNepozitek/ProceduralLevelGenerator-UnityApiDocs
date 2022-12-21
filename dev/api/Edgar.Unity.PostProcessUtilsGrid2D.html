@@ -1,0 +1,528 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PostProcessUtilsGrid2D
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PostProcessUtilsGrid2D
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.Unity.PostProcessUtilsGrid2D">
+  
+  
+  <h1 id="Edgar_Unity_PostProcessUtilsGrid2D" data-uid="Edgar.Unity.PostProcessUtilsGrid2D" class="text-break">Class PostProcessUtilsGrid2D
+  </h1>
+  <div class="markdown level0 summary"><p>Utility post-processing functions used mainly in built-in post-processing logic.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PostProcessUtilsGrid2D</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.Unity.html">Edgar.Unity</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Edgar_Unity_PostProcessUtilsGrid2D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class PostProcessUtilsGrid2D</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_Unity_PostProcessUtilsGrid2D_CenterGrid_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.CenterGrid*"></a>
+  <h4 id="Edgar_Unity_PostProcessUtilsGrid2D_CenterGrid_Edgar_Unity_DungeonGeneratorLevelGrid2D_System_Boolean_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.CenterGrid(Edgar.Unity.DungeonGeneratorLevelGrid2D,System.Boolean)">CenterGrid(DungeonGeneratorLevelGrid2D, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Position the grid so that the level is centered at (0,0).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CenterGrid(DungeonGeneratorLevelGrid2D level, bool compressBounds = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DungeonGeneratorLevelGrid2D.html">DungeonGeneratorLevelGrid2D</a></td>
+        <td><span class="parametername">level</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">compressBounds</span></td>
+        <td><p>Whether to compress bounds of individual tilemaps before computing the center.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_PostProcessUtilsGrid2D_CopyTiles_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.CopyTiles*"></a>
+  <h4 id="Edgar_Unity_PostProcessUtilsGrid2D_CopyTiles_Edgar_Unity_RoomInstanceGrid2D_System_Collections_Generic_List_Tilemap__System_Boolean_System_Boolean_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.CopyTiles(Edgar.Unity.RoomInstanceGrid2D,System.Collections.Generic.List{Tilemap},System.Boolean,System.Boolean)">CopyTiles(RoomInstanceGrid2D, List&lt;Tilemap&gt;, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Copies tiles from a given room template to given destination tilemaps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyTiles(RoomInstanceGrid2D roomInstance, List&lt;Tilemap&gt; destinationTilemaps, bool deleteNonNullTiles, bool deleteTilesInsideOutline)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.RoomInstanceGrid2D.html">RoomInstanceGrid2D</a></td>
+        <td><span class="parametername">roomInstance</span></td>
+        <td><p>Room instance to be copied to the destination tilemaps.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Tilemap</span>&gt;</td>
+        <td><span class="parametername">destinationTilemaps</span></td>
+        <td><p>List of destination tilemaps.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">deleteNonNullTiles</span></td>
+        <td><p>Whether to delete non-null tiles from destination tilemaps.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">deleteTilesInsideOutline</span></td>
+        <td><p>Whether to delete all tiles insides the outline from destination tilemaps.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_Unity_PostProcessUtilsGrid2D_CopyTiles_Edgar_Unity_RoomInstanceGrid2D_System_Collections_Generic_List_Tilemap__System_Boolean_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>One important aspect of this method is how to handle already existing tiles in destination tilemaps.</p>
+<p>When deleteNonNullTiles is true, it computes all non-null positions across all layers in the room template.
+After that, it deletes all tiles on these positions in destination tilemaps.</p>
+<p>When deleteTilesInsideOutline is true, it computes all tiles inside the outline of the room template and
+deletes them from the destination tilemaps.
+So even if there is a hole inside the room template, the position is still removed.</p>
+<p>deleteNonNullTiles and deleteTilesInsideOutline can be combined together.</p>
+</div>
+  
+  
+  <a id="Edgar_Unity_PostProcessUtilsGrid2D_CopyTilesToSharedTilemaps_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.CopyTilesToSharedTilemaps*"></a>
+  <h4 id="Edgar_Unity_PostProcessUtilsGrid2D_CopyTilesToSharedTilemaps_Edgar_Unity_DungeonGeneratorLevelGrid2D_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.CopyTilesToSharedTilemaps(Edgar.Unity.DungeonGeneratorLevelGrid2D)">CopyTilesToSharedTilemaps(DungeonGeneratorLevelGrid2D)</h4>
+  <div class="markdown level1 summary"><p>Copies to from individual room templates to shared tilemaps.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyTilesToSharedTilemaps(DungeonGeneratorLevelGrid2D level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DungeonGeneratorLevelGrid2D.html">DungeonGeneratorLevelGrid2D</a></td>
+        <td><span class="parametername">level</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_Unity_PostProcessUtilsGrid2D_CopyTilesToSharedTilemaps_Edgar_Unity_DungeonGeneratorLevelGrid2D__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The order is important. First, copy all basic rooms and only then copy corridor rooms.</p>
+</div>
+  
+  
+  <a id="Edgar_Unity_PostProcessUtilsGrid2D_Destroy_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.Destroy*"></a>
+  <h4 id="Edgar_Unity_PostProcessUtilsGrid2D_Destroy_Object_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.Destroy(Object)">Destroy(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Destroy(Object gameObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Object</span></td>
+        <td><span class="parametername">gameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_PostProcessUtilsGrid2D_DisableRoomTemplateColliders_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.DisableRoomTemplateColliders*"></a>
+  <h4 id="Edgar_Unity_PostProcessUtilsGrid2D_DisableRoomTemplateColliders_Edgar_Unity_DungeonGeneratorLevelGrid2D_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.DisableRoomTemplateColliders(Edgar.Unity.DungeonGeneratorLevelGrid2D)">DisableRoomTemplateColliders(DungeonGeneratorLevelGrid2D)</h4>
+  <div class="markdown level1 summary"><p>Disables colliders of individual room template tilemaps in the generated level.
+The goal is to try to keep triggers functioning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DisableRoomTemplateColliders(DungeonGeneratorLevelGrid2D level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DungeonGeneratorLevelGrid2D.html">DungeonGeneratorLevelGrid2D</a></td>
+        <td><span class="parametername">level</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_PostProcessUtilsGrid2D_DisableRoomTemplateColliders_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.DisableRoomTemplateColliders*"></a>
+  <h4 id="Edgar_Unity_PostProcessUtilsGrid2D_DisableRoomTemplateColliders_GameObject_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.DisableRoomTemplateColliders(GameObject)">DisableRoomTemplateColliders(GameObject)</h4>
+  <div class="markdown level1 summary"><p>Disables colliders of individual tilemaps in a given room template.
+The goal is to try to keep triggers functioning.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DisableRoomTemplateColliders(GameObject roomTemplate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">roomTemplate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_PostProcessUtilsGrid2D_DisableRoomTemplateRenderers_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.DisableRoomTemplateRenderers*"></a>
+  <h4 id="Edgar_Unity_PostProcessUtilsGrid2D_DisableRoomTemplateRenderers_Edgar_Unity_DungeonGeneratorLevelGrid2D_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.DisableRoomTemplateRenderers(Edgar.Unity.DungeonGeneratorLevelGrid2D)">DisableRoomTemplateRenderers(DungeonGeneratorLevelGrid2D)</h4>
+  <div class="markdown level1 summary"><p>Disables tilemap renderers in room template instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DisableRoomTemplateRenderers(DungeonGeneratorLevelGrid2D level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DungeonGeneratorLevelGrid2D.html">DungeonGeneratorLevelGrid2D</a></td>
+        <td><span class="parametername">level</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_Unity_PostProcessUtilsGrid2D_DisableRoomTemplateRenderers_Edgar_Unity_DungeonGeneratorLevelGrid2D__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is useful when using shared tilemaps.</p>
+</div>
+  
+  
+  <a id="Edgar_Unity_PostProcessUtilsGrid2D_DisableRoomTemplateRenderers_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.DisableRoomTemplateRenderers*"></a>
+  <h4 id="Edgar_Unity_PostProcessUtilsGrid2D_DisableRoomTemplateRenderers_GameObject_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.DisableRoomTemplateRenderers(GameObject)">DisableRoomTemplateRenderers(GameObject)</h4>
+  <div class="markdown level1 summary"><p>Disables tilemap renderers in a given room template.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DisableRoomTemplateRenderers(GameObject roomTemplate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">roomTemplate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_PostProcessUtilsGrid2D_GetTilemapsCenter_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.GetTilemapsCenter*"></a>
+  <h4 id="Edgar_Unity_PostProcessUtilsGrid2D_GetTilemapsCenter_System_Collections_Generic_List_Tilemap__System_Boolean_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.GetTilemapsCenter(System.Collections.Generic.List{Tilemap},System.Boolean)">GetTilemapsCenter(List&lt;Tilemap&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets the center point of given tilemaps-</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 GetTilemapsCenter(List&lt;Tilemap&gt; tilemaps, bool compressBounds = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">Tilemap</span>&gt;</td>
+        <td><span class="parametername">tilemaps</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">compressBounds</span></td>
+        <td><p>Whether to compress bounds of individual tilemaps before computing the center.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_PostProcessUtilsGrid2D_InitializeSharedTilemaps_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.InitializeSharedTilemaps*"></a>
+  <h4 id="Edgar_Unity_PostProcessUtilsGrid2D_InitializeSharedTilemaps_Edgar_Unity_DungeonGeneratorLevelGrid2D_Edgar_Unity_TilemapLayersStructureModeGrid2D_Edgar_Unity_ITilemapLayersHandlerGrid2D_Edgar_Unity_ITilemapLayersHandlerGrid2D_GameObject_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.InitializeSharedTilemaps(Edgar.Unity.DungeonGeneratorLevelGrid2D,Edgar.Unity.TilemapLayersStructureModeGrid2D,Edgar.Unity.ITilemapLayersHandlerGrid2D,Edgar.Unity.ITilemapLayersHandlerGrid2D,GameObject)">InitializeSharedTilemaps(DungeonGeneratorLevelGrid2D, TilemapLayersStructureModeGrid2D, ITilemapLayersHandlerGrid2D, ITilemapLayersHandlerGrid2D, GameObject)</h4>
+  <div class="markdown level1 summary"><p>Initializes shared tilemaps of a given level.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void InitializeSharedTilemaps(DungeonGeneratorLevelGrid2D level, TilemapLayersStructureModeGrid2D mode, ITilemapLayersHandlerGrid2D defaultTilemapLayersHandler, ITilemapLayersHandlerGrid2D customTilemapLayersHandler, GameObject example)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DungeonGeneratorLevelGrid2D.html">DungeonGeneratorLevelGrid2D</a></td>
+        <td><span class="parametername">level</span></td>
+        <td><p>Generated level.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.TilemapLayersStructureModeGrid2D.html">TilemapLayersStructureModeGrid2D</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td><p>Tilemap layers mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.ITilemapLayersHandlerGrid2D.html">ITilemapLayersHandlerGrid2D</a></td>
+        <td><span class="parametername">defaultTilemapLayersHandler</span></td>
+        <td><p>Default tilemap layers handler. Used for the Default mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.ITilemapLayersHandlerGrid2D.html">ITilemapLayersHandlerGrid2D</a></td>
+        <td><span class="parametername">customTilemapLayersHandler</span></td>
+        <td><p>Custom tilemap layers handler. Used for the Custom mode.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">example</span></td>
+        <td><p>Example game object for tilemaps structure. Used for the FromExample mode.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Unity_PostProcessUtilsGrid2D_SetTilemapsMaterial_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.SetTilemapsMaterial*"></a>
+  <h4 id="Edgar_Unity_PostProcessUtilsGrid2D_SetTilemapsMaterial_Edgar_Unity_DungeonGeneratorLevelGrid2D_Material_" data-uid="Edgar.Unity.PostProcessUtilsGrid2D.SetTilemapsMaterial(Edgar.Unity.DungeonGeneratorLevelGrid2D,Material)">SetTilemapsMaterial(DungeonGeneratorLevelGrid2D, Material)</h4>
+  <div class="markdown level1 summary"><p>Sets a given material to all shared tilemap layers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetTilemapsMaterial(DungeonGeneratorLevelGrid2D level, Material tilemapMaterial)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Unity.DungeonGeneratorLevelGrid2D.html">DungeonGeneratorLevelGrid2D</a></td>
+        <td><span class="parametername">level</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Material</span></td>
+        <td><span class="parametername">tilemapMaterial</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
